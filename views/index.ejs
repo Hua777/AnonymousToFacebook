@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/pace.minimal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><%= title %></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Post</a></li>
+                    <li><a href="javascript:;">Donate</a></li>
+                    <li><a href="https://fb.com/<%= fanpageId %>" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    
+    
+    <div class="my-container">
+        <div class="jumbotron">
+            <h1><%= title %></h1>
+            <p class="uppercase"><%= shortTitle %></p>
+        </div>
+        
+        
+        <div class="panel-heading">相關設定</div>
+        <div class="setting">
+            <div class="col-md-6">
+                <label>
+                    <input name="mode" id="ModePhoto" value="photo" type="radio" checked="checked">圖片模式（字數限制：300字）
+                </label>
+                <br/>
+                <label>
+                    <input name="mode" id="ModeMessage" value="message" type="radio">純文字模式（字數限制：1024字）
+                </label>
+            </div>
+            
+            
+            
+            
+            
+            <div id="PhotoPartA" class="col-md-6">
+                <div class="text-right col-md-3">主題</div>
+                <select class="col-md-9" id="Theme">
+                    <% for(var st in Themes) { %>
+                        <option value="<%= st %>"><%= Themes[st].name %></option>
+                    <% } %>
+                </select>
+                <br/>
+                <div class="text-right col-md-3">字體</div>
+                <select class="col-md-9" id="FontFamily">
+                    <% for(var sf in Fonts) { %>
+                        <option value="<%= sf %>"><%= sf %></option>
+                    <% } %>
+                </select>
+            </div>
+        </div>
+
+
+        <br/>
+        
+        
+        <div class="panel-heading">輸入靠北文</div>
+        <textarea id="Message" class="col-md-12 message-textarea" placeholder="快快寫個靠北文" rows="7"></textarea>
+        
+        
+        <br/>
+        
+        
+        <div id="PhotoPartB">
+            <div class="panel-heading">預覽 - <a class="href-main" id="Redraw" href="javascript:;">重繪</a></div>
+            <img id="PhotoReview" class="photo-review" src="" alt="繪圖中" />
+            
+            
+            
+            <br/>
+        </div>
+        
+        
+        
+        <div class="panel-heading">以下規則請遵守 - 參考<a class="href-main" target="_blank" href="https://fb.com/kobeengineer">靠北工程師</a></div>
+        <div class="main-rule-privacy">
+            1.當你勾選後，即代表您同意遵守 Facebook 社群使用規則.<br/>
+            2.嚴禁發表任何霸凌內容、或有相關意圖之內容，違反將被刪除<br/>
+            3.靠北勿指名道姓、透漏任何個資或隱私資訊<br/>
+            4.嚴禁發表任何情色、暴力之相關內容，或有相關意圖之內容，違反將被刪除<br/>
+            5.與本版主題無關、或發文內容明顯為測試意圖、或無關之推薦文、廣告文、職缺文，將被刪除
+        </div>
+            
+        
+        
+        <div class="panel-heading">閱讀以下隱私權政策 - 參考<a class="href-main" target="_blank" href="https://fb.com/kobeengineer">靠北工程師</a></div>
+        <textarea class="col-md-12 main-rule-privacy" rows="5" readonly>非常歡迎您光臨 kaobei (以下簡稱本網站)，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：
+
+一、隱私權保護政策的適用範圍
+隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。
+
+二、資料的蒐集與使用方式
+為了在本網站上提供您最佳的互動性服務，可能會請您提供相關個人的資料，其範圍如下：於使用發文服務時，伺服器會自行記錄相關行徑，包括您使用連線設備的去識別性的IP位址、使用時間，做為我們增進網站服務的參考依據。於使用檢舉系統時，伺服器會自行記錄相關行徑，包括您提交檢舉時使用之臉書帳號ID、檢舉時間，做為系統自動判斷發文下架之依據。以上之記錄皆為內部應用，決不對外公布。除非取得您的同意或其他法令之特別規定，本網站絕不會將您的個人資料揭露予第三人或使用於蒐集目的以外之其他用途。
+
+三、資料之保護
+本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施。
+
+四、網站對外的相關連結
+本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。
+
+五、隱私權保護政策之修正
+本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。</textarea>
+        
+        
+        
+        <br/>
+        
+        
+        <div class="panel-heading">按下送出後代表同意上述規則與政策</div>
+        <button id="GotoPost" type="button" class="col-md-12 post-button">匿名發佈</button>
+        
+        
+        
+        <br/>
+    </div>
+    <script src="/javascripts/pace.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/javascripts/kaobei.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+body {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 40px 0 40px 0;
+    background-color: darkslategray;
+    color: white;
+    font-family: "微軟正黑體";
+    font-size: 18px;
+}
+
+br {
+    clear: both;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+textarea::-webkit-input-placeholder {
+    color: black;
+}
+
+option:disabled {
+    background-color: darkblue;
+    color: white;
+}
+
+.href-main,
+.href-main:link,
+.href-main:active,
+.href-main:visited {
+    color: black;
+    background-color: lightblue;
+}
+
+.href-main:hover {
+    color: white;
+    background-color: darkslateblue;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.my-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+.message-textarea {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: unset;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+.setting {
+    text-align: left;
+}
+
+.setting label {
+    cursor: pointer;
+}
+
+.setting select {
+    color: black;
+    background-color: lightblue;
+    outline: none;
+}
+
+.setting select:disabled {
+    color: white;
+    background-color: darkblue;
+}
+
+.main-rule-privacy {
+    width: 100%;
+    text-align: left;
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: lightblue;
+    color: black;
+    padding: 5px;
+}
+
+.post-button {
+    outline: none;
+    background-color: lightgreen;
+    color: black;
+    border: unset;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.post-button:hover {
+    background-color: green;
+}
+    
+.photo-review {
+    width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    min-height: 30px;
+    background-color: darkgreen;
+    border: unset;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 30px;
+    height: 30px;
+    padding-top: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:hover {
+    color: white;
+}
+
+.jumbotron {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.panel-heading {
+    background-color: darkblue;
+    text-align: left;
+    padding: 3px;
+    margin: 20px 0 0 0;
+}
+
+.hash-tag {
+    padding: 10px;
+    text-align: center;
+}
+
+.hash-tag::before {
+    content: '[';
+}
+
+.hash-tag::after {
+    content: ']';
+}
+
+.form-control {
+    border: unset;
+    border-radius: unset;
+    background-color: lightblue;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.text-center-page {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.large-title {
+    font-size: 60px;
+}
+
+.mid-title {
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    
+    .large-title {
+        font-size: 40px;
+    }
+
+    .mid-title {
+        font-size: 20px;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+    
+    .setting {
+        text-align: center;
+    }
+    
+    .setting select {
+        width: 100%;
+    }
+    
+    .text-right {
+        text-align: center;
+    }
+    
+    .my-container {
+        width: 95%;
+    }
+    
+    
+    .navbar {
+        min-height: 50;
+    }
+
+    .navbar-brand,
+    .navbar-nav li a {
+        line-height: 50px;
+        height: 50px;
+        padding-top: 0;
+    }
+}

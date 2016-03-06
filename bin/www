@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+/**
+ * 伺服器起始點
+ */
+var app = require('../app');
+var http = require('http');
+var server = http.createServer(app);
+server.listen(80);

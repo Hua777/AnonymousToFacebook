@@ -6,9 +6,10 @@ npm insatll (缺少模組自己補)<br/>
 forever start bin/www<br/>
 
 請修改
-  kaobei.js
-  about-this-site.js
-  functions.js 內的 shorturl
+
+    kaobei.js
+    about-this-site.js
+    functions.js 內的 shorturl
 
 注意 canvas: <a href="https://github.com/Automattic/node-canvas" target="_blank">https://github.com/Automattic/node-canvas</a>
 

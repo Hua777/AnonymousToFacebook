@@ -1,9 +1,7 @@
 # AnonymousToFacebook
-
 使用 Node.js 與 FB API 架起來的匿名發文系統
 
 # 安裝
-
 npm insatll (缺少模組自己補)<br/>
 forever start bin/www<br/>
 

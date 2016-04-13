@@ -76,7 +76,8 @@ var UseCharMergeArray = function (_array, _char) {
  * 同步執行，從 bit.ly 取得短網址
  */
 var ShortUrl = function (_longUrl) {
-    var bitlyUrl = "http://api.bit.ly/v3/shorten?longUrl=" + _longUrl + "&login=[USERNAME]&apikey=[APIKEY]]&format=json";
+    var bitlyUrl = "http://api.bit.ly/v3/shorten?longUrl=" + _longUrl + "&login=[USERNAME]&apikey=[APIKEY]&format=json";
+    //中括號的地方請用自己bitly的API
     var result = syncRequest('GET', bitlyUrl);
     var bitlyResult = JSON.parse(result.getBody('utf8'));
     return bitlyResult.data.url;

@@ -14,9 +14,11 @@ Use Node.js and Facebook Graph API to build this "annonymous to facebook" system
 
         https://github.com/Automattic/node-canvas
 
-3. Enter this project<br/>
-4. npm insatll<br/>
-5. forever start bin/www        //start this server
+3. Enter this project
+
+4. npm install
+
+5. forever start bin/www
 
 # Draw Image
 You can also use my API.

@@ -4,21 +4,39 @@ Use Node.js and Facebook Graph API to build this "annonymous to facebook" system
 <a href="https://developers.facebook.com/tools/explorer/" target="_blank">Facebook Graph API</a>
 
 # Install
-1. Edit these three files
+1. create mysql database must same as DB in kaobei.js.
+
+2. create mysql datatable to record post must same as FanPageEnglishName in kaobei.js:
+
+        id              BIGINT  UNSIGNED        AUTO_INCREMENT  PRIMARY KEY
+        dataId          TEXT    NOT NULL
+        ip              TEXT    NOT NULL
+        postId          TEXT    NOT NULL
+        postTime        TEXT    NOT NULL
+        
+3. create mysql datatable to record report must same as ReportDT in kaobei.js:
+
+        id              BIGINT  UNSIGNED        AUTO_INCREMENT  PRIMARY KEY
+        dataId          TEXT    NOT NULL
+        ip              TEXT    NOT NULL
+        fbUserId        TEXT    NOT NULL
+        reportTime      TEXT    NOT NULL
+
+4. Edit these three files
 
         kaobei.js
         about-this-site.js
         functions.js 內的 shorturl
     
-2. Install canvas
+5. Install canvas
 
         https://github.com/Automattic/node-canvas
 
-3. Enter this project
+6. Enter this project
 
-4. npm install
+7. npm install
 
-5. forever start bin/www
+8. forever start bin/www
 
 # Draw Image
 You can also use my API.

@@ -9,7 +9,7 @@ module.exports = {
     AppSecret: "你的 FB APP SECRET",
     AppVersion: "v2.5",
     AppLoginCallBack: aboutThisSite.DomainName + "FB 登入後回到的 url FB APP 內也必須設定",
-    AppLoginScope: "想取得登入者的相關資料(ex: email,id)",
+    AppLoginScope: "想取得登入者的相關資料(ex: email)",
     DBHost: "資料庫 Host",
     DBUser: "資料庫 User",
     DBPassword: "資料庫 Password",

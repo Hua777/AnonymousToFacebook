@@ -1,18 +1,18 @@
 var aboutThisSite = require('./about-this-site.js');
 
 module.exports = {
-    FanPageChineseName: "匿名發文專頁名稱",
-    FanPageEnglishName: "英文簡稱 連接資料表將使用此名稱",
-    FanPageId: "專頁 ID",
-    FanPageAccessToken: "你的 FB APP 對你的專頁獲得的 AccessToken",
-    AppId: "你的 FB APP ID",
-    AppSecret: "你的 FB APP SECRET",
-    AppVersion: "v2.5",
-    AppLoginCallBack: aboutThisSite.DomainName + "FB 登入後回到的 url FB APP 內也必須設定",
-    AppLoginScope: "想取得登入者的相關資料(ex: email)",
-    DBHost: "資料庫 Host",
-    DBUser: "資料庫 User",
-    DBPassword: "資料庫 Password",
-    DB: "資料庫名稱",
-    ReportDT: "檢舉資料表"
+    FanPageChineseName: "匿名發文專頁名稱",                                                     //範例: 靠北測試
+    FanPageEnglishName: "英文簡稱 連接資料表將使用此名稱",                                      //範例: kbtest
+    FanPageId: "專頁 ID",                                                                       //範例: 123456789...
+    FanPageAccessToken: "你的 FB APP 對你的專頁獲得的 AccessToken",                             //範例: ABCDE...
+    AppId: "你的 FB APP ID",                                                                    //範例: 123456789...
+    AppSecret: "你的 FB APP SECRET",                                                            //範例: ABCDE...
+    AppVersion: "v2.5",                                                                         //範例: 2.6
+    AppLoginCallBack: aboutThisSite.DomainName + "FB 登入後回到的 url FB APP 內也必須設定",     //範例: aboutThisSite.DomainName + "report/",
+    AppLoginScope: "想取得登入者的相關資料",                                                    //範例: email
+    DBHost: "資料庫 Host",                                                                      //範例: 127.0.0.1
+    DBUser: "資料庫 User",                                                                      //範例: ABCDE...
+    DBPassword: "資料庫 Password",                                                              //範例: ABCDE...
+    DB: "資料庫名稱",                                                                           //範例: kaobei
+    ReportDT: "檢舉資料表"                                                                      //範例: report
 };

@@ -38,41 +38,6 @@ Use Node.js and Facebook Graph API to build this "annonymous to facebook" system
 
 8. forever start bin/www
 
-# Draw Image
-You can also use my API.
-
-        Method: POST,
-        URL: http://kbss.ga:81/API/PNG,
-        Body: {
-            PNGMinWidth: 750,                   //圖片最小寬度
-            PNGMinHeight: 300,                  //圖片最小高度
-            PNGPadding: 20,                     //圖片 Padding
-            PNGBackgroundColor: "#000000",      //背景顏色
-            PNGStringColor: "#FFFFFF",          //文字顏色
-            MainString: "test",                 //中間位置的主要文字
-            SignString: "test",                 //右下角簽名文字
-            FontFamilyKey: "微軟正黑粗體",      //字體請參考下面可使用的字體列表
-            MainStringFontSize: 70,             //主要文字的大小px
-            SignStringFontSize: 30              //簽名文字的大小px
-        },
-        Response: {
-            HeadBase64: "Base64 編碼的圖片包含 data:image/png;base64,"
-        } | {
-            error: true,
-            message: "錯誤訊息"
-        }
-
-Get can be used fonts in this API server.
-
-        Method: GET,
-        URL: http://kbss.ga:81/API/FONTS,
-        Response: {
-            Fonts: [
-                "微軟正黑粗體"
-                ...
-            ]
-        }
-
 #  Facebook Graph API
 Post only message to facebook.
 
